@@ -1,3 +1,106 @@
-.testing {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif, "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #123c69;
+}
+
+body {
+  background-color: #a8d0e6;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-variant: small-caps;
+  font-size: 60px;
+  text-shadow: 3px 3px #d96f94;
+}
+
+div {
+  position: relative;
+}
+
+p {
+  border: 1px solid black;
+  width: 90%;
+  height: 400px;
+  margin: 5%;
+  color: white;
+  text-align: justify;
+  padding-top: 25%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #24305e;
+  line-height: 170%;
+}
+
+.title {
+  top: 0px;
+  right: 0px;
+  height: 20%;
+  position: absolute;
+  width: 40%;
+  padding-top: 2%;
+  margin-right: 5%;
+  text-align: center;
+  font-size: 30px;
+  color: #24305e;
+  font-weight: bold;
+}
+
+#chicken {
+  background-color: #f8e9a1;
+}
+
+#beef {
+  background-color: #f76c6c;
+}
+
+#sushi {
+  background-color: #7ff76c;
+}
+
+.row {
+  width: 100%;
+}
+
+/* Desktop view */
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: left;
+    width: 50%;
+  }
+  .expand {
+    width: 100%;
+  }
+
+  .expand .title {
+    margin-right: 2.5%;
+  }
+
+  #adjust-size {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .col-sm-12 {
+    float: left;
+    width: 100%;
+  }
 }
